@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		5DE373272795720C007D9DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE373262795720C007D9DDE /* AppDelegate.swift */; };
 		5DE373292795720C007D9DDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE373282795720C007D9DDE /* SceneDelegate.swift */; };
-		5DE3732B2795720C007D9DDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE3732A2795720C007D9DDE /* ViewController.swift */; };
 		5DE3732E2795720C007D9DDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE3732C2795720C007D9DDE /* Main.storyboard */; };
 		5DE373302795720D007D9DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DE3732F2795720D007D9DDE /* Assets.xcassets */; };
 		5DE373332795720D007D9DDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE373312795720D007D9DDE /* LaunchScreen.storyboard */; };
+		5DE6123D27973A590043DB0B /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6123B27973A590043DB0B /* homeViewController.swift */; };
+		5DE6123E27973A590043DB0B /* homeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DE6123C27973A590043DB0B /* homeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5DE373232795720C007D9DDE /* Instagram Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE373262795720C007D9DDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DE373282795720C007D9DDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5DE3732A2795720C007D9DDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5DE3732D2795720C007D9DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DE3732F2795720D007D9DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DE373322795720D007D9DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DE373342795720D007D9DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DE6123B27973A590043DB0B /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		5DE6123C27973A590043DB0B /* homeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DA1144D2796ABE600A5F350 /* appUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				5DE3732C2795720C007D9DDE /* Main.storyboard */,
+				5DE3732F2795720D007D9DDE /* Assets.xcassets */,
+				5DE373312795720D007D9DDE /* LaunchScreen.storyboard */,
+			);
+			path = appUtilities;
+			sourceTree = "<group>";
+		};
+		5DA1144E2796AC0600A5F350 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DE6123B27973A590043DB0B /* homeViewController.swift */,
+				5DE6123C27973A590043DB0B /* homeViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		5DE3731A2795720C007D9DDE = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +77,10 @@
 		5DE373252795720C007D9DDE /* Instagram Clone */ = {
 			isa = PBXGroup;
 			children = (
+				5DA1144E2796AC0600A5F350 /* Controllers */,
+				5DA1144D2796ABE600A5F350 /* appUtilities */,
 				5DE373262795720C007D9DDE /* AppDelegate.swift */,
 				5DE373282795720C007D9DDE /* SceneDelegate.swift */,
-				5DE3732A2795720C007D9DDE /* ViewController.swift */,
-				5DE3732C2795720C007D9DDE /* Main.storyboard */,
-				5DE3732F2795720D007D9DDE /* Assets.xcassets */,
-				5DE373312795720D007D9DDE /* LaunchScreen.storyboard */,
 				5DE373342795720D007D9DDE /* Info.plist */,
 			);
 			path = "Instagram Clone";
@@ -128,6 +147,7 @@
 				5DE373332795720D007D9DDE /* LaunchScreen.storyboard in Resources */,
 				5DE373302795720D007D9DDE /* Assets.xcassets in Resources */,
 				5DE3732E2795720C007D9DDE /* Main.storyboard in Resources */,
+				5DE6123E27973A590043DB0B /* homeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DE3732B2795720C007D9DDE /* ViewController.swift in Sources */,
 				5DE373272795720C007D9DDE /* AppDelegate.swift in Sources */,
+				5DE6123D27973A590043DB0B /* homeViewController.swift in Sources */,
 				5DE373292795720C007D9DDE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +312,7 @@
 				DEVELOPMENT_TEAM = ZG4QAU4XKL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Instagram Clone/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Insta Demo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,6 +341,7 @@
 				DEVELOPMENT_TEAM = ZG4QAU4XKL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Instagram Clone/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Insta Demo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
